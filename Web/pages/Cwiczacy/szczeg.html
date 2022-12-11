@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="list.html">Ćwiczący</a></li>
+            <li><a href="../Wejscia/list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Szczegóły Ćwiczącego</h2>
+        <form class="form">
+            <label for="Imię">Imię:</label>
+            <input type="text" name="Imię" id="Imię" value="Jan" disabled/>
+            <span id="errorImię"></span>
+
+            <label for="Naziwsko">Naziwsko:</span></label>
+            <input type="text" name="Naziwsko" id="Naziwsko" value="Kowalski" disabled/>
+            <span id="errorNaziwsko"></span>
+
+            <label for="Wiek">Wiek:</span></label>
+            <input type="text" name="Wiek" id="Wiek" value="16" disabled/>
+            <span id="errorWiek"></span>
+
+            <label for="Pesel">Pesel: </label>
+            <input type="text" name="Pesel" id="Pesel" value="8516841685" disabled>
+            <span id="errorPesel"></span>
+            <div>
+                <a href="form-edit.html" class="szczeg-button-edit" >Edytuj</a>
+            </div>
+        </form>
+        <h2>Szczegóły Wejść</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Strefa</th>
+                    <th>Data Wejścia</th>
+                    <th>Cena Biletu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Siłownia</td>
+                    <td>16.02.2022</td>
+                    <td>120</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="list.html" class="button-back">Powrót</a></p>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>

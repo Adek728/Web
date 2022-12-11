@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../js/validationWejForm.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../Cwiczacy/list.html">Ćwiczący</a></li>
+            <li><a href="list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Nowe Wejście</h2>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            <label for="Cwiczacy">Ćwiczący: <span class="symbol-required">*</span></label>
+            <select name="Cwiczacy" id="Cwiczacy" required>
+                <option value="" disabled selected>---Wybór Ćwiczącego---</option>
+                <option value="1">Jan Kowalski</option>
+            </select>
+            <span id="errorCwiczacy" class="error-text"></span>
+            
+
+            <label for="Trening">Trening: <span class="symbol-required">*</span></label>
+            <select name="Trening" id="Trening" required>
+                <option value="" disabled selected>---Wybór Treningu---</option>
+                <option value="1">Siłownia</option>
+                <option value="2">Sauna</option>
+            </select>
+            <span id="errorTrening" class="error-text"></span>
+
+            <label for="Cena">Cena: <span class="symbol-required">*</span></label>
+            <input type="number" name="Cena" id="Cena" placeholder="100-200" required>
+            <span id="errorCena" class="error-text"></span>
+            
+
+            <label for="Data">Data Wejścia: <span class="symbol-required">*</span></label>
+            <input type="date" name="Data" id="Data" required>
+            <span id="errorData" class="error-text"></span>
+            
+
+            
+            
+            <div class="form-buttons">
+                <p id="errorsSummary"></p>
+                <input type="submit" class="form-button-submit" value="Dodaj"/>
+                <a href="list.html" class="form-button-cancel">Anuluj</a>
+            </div>
+            
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>

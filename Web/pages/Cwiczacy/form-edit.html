@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="list.html">Ćwiczący</a></li>
+            <li><a href="../Wejscia/list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Edycja Ćwiczącego</h2>
+        <form class="form">
+            <label for="Imię">Imię: <span class="symbol-required">*</span></label>
+            <input type="text" name="Imię" id="Imię" value="Jan" required/>
+            <span id="errorImię"></span>
+
+            <label for="Naziwsko">Naziwsko: <span class="symbol-required">*</span></label>
+            <input type="text" name="Naziwsko" id="Naziwsko" value="Kowalski" required/>
+            <span id="errorNaziwsko"></span>
+
+            <label for="Wiek">Wiek: <span class="symbol-required">*</span></label>
+            <input type="text" name="Wiek" id="Wiek" value="16" required/>
+            <span id="errorWiek"></span>
+
+            <label for="Pesel">Pesel: </label>
+            <input type="text" name="Pesel" id="Pesel" value="8516841685">
+            <span id="errorPesel"></span>
+            
+            <div>
+                <p id="errorsSummary"></p>
+                <input type="submit" class="button-add" value="Akceptuj"/>
+                <a href="list.html" class="list-actions-button-edit">Wyjdź</a>
+            </div>
+            
+            
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>

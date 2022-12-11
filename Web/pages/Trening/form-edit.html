@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../Cwiczacy/list.html">Ćwiczący</a></li>
+            <li><a href="../Wejscia/list.html">Wejścia</a></li>
+            <li><a href="list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Edycja Treningu</h2>
+        <form class="form">
+            <label for="Strefa">Strefa: <span class="symbol-required">*</span></label>
+            <input type="text" name="Strefa" id="Strefa" value="Siłownia" required/>
+            <span id="errorStrefa"></span>
+
+            <label for="CzasTrwania">Czas Trwania: <span class="symbol-required">*</span></label>
+            <input type="text" name="CzasTrwania" id="CzasTrwania" value="1:30 godziny" required/>
+            <span id="errorCzasTrwania"></span>
+            
+            <div>
+                <p id="errorsSummary"></p>
+                <input type="submit" class="button-add" value="Akceptuj"/>
+                <a href="list.html" class="list-actions-button-edit">Wyjdź</a>
+            </div>
+            
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>

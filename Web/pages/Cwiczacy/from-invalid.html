@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <script type="applicatoin/javascript" src="../../js/validationCommon.js"></script>
+
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="list.html">Ćwiczący</a></li>
+            <li><a href="../Wejscia/list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Nowy Ćwiczący</h2>
+        <form class="form" onsubmit="return validateForm();">
+            <label for="Imię">Imię: <span class="symbol-required">*</label>
+            <input type="text" name="Imię" id="Imię" class="error-input" required/>
+            <span id="errorImię" class="errors-text">Imię Wymagane!</span>
+
+            <label for="Naziwsko">Naziwsko: <span class="symbol-required">*</label>
+            <input type="text" name="Naziwsko" id="Naziwsko" class="error-input" required/>
+            <span id="errorNaziwsko" class="errors-text">Nazwisko Wymagane!</span>
+
+            <label for="Wiek">Wiek: <span class="symbol-required">*</label>
+            <input type="text" name="Wiek" id="Wiek" class="error-input" required/>
+            <span id="errorWiek" class="errors-text">Wiek Wymagany!</span>
+
+            <label for="Pesel">Pesel: </label>
+            <input type="text" name="Pesel" id="Pesel">
+            <span id="errorPesel" class="errors-text"></span>
+            
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text">Błędy w formularzu</p>
+                <input type="submit" class="form-button-submit" value="Dodaj"/>
+                <a href="list.html" class="form-button-cancel">Anuluj</a>
+            </div>
+            
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>

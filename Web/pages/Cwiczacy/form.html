@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <script type="application/javascript" src="../../js/validationCommon.js"></script>
+    <script type="application/javascript" src="../../js/validationEmpForm.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="list.html">Ćwiczący</a></li>
+            <li><a href="../Wejscia/list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Nowy Ćwiczący</h2>
+        <form class="form" novalidate onsubmit="return validateForm();">
+            <label for="Imie">Imię: <span class="symbol-required">*</span></label>
+            <input type="text" name="Imie" id="Imie" placeholder="2-60 znaków" required/>
+            <span id="errorImie" class="error-text"></span>
+            
+
+            <label for="Nazwisko">Naziwsko: <span class="symbol-required">*</span></label>
+            <input type="text" name="Nazwisko" id="Nazwisko" placeholder="2-60 znaków" required/>
+            <span id="errorNaziwsko" class="error-text"></span>
+            
+
+            <label for="Wiek">Wiek: <span class="symbol-required">*</span></label>
+            <input type="number" name="Wiek" id="Wiek" placeholder="1-3 cyfry" required/>
+            <span id="errorWiek" class="error-text"></span>
+            
+
+            <label for="Pesel">Pesel: </label>
+            <input type="number" name="Pesel" id="Pesel" placeholder="11 cyfer">
+            <span id="errorPesel" class="error-text"></span>
+            
+            
+            <div class="form-buttons">
+                <p id="errorsSummary"></p>
+                <input type="submit" class="form-button-submit" value="Dodaj"/>
+                <a href="list.html" class="form-button-cancel">Anuluj</a>
+            </div>
+            
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+
+
+</body>
+</html>

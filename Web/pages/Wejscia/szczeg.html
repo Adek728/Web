@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../Cwiczacy/list.html">Ćwiczący</a></li>
+            <li><a href="list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Szczegóły Wejścia</h2>
+        <form class="form">
+            <label for="Ćwiczący">Ćwiczący: <span class="symbol-required">*</span></label>
+            <select name="Ćwiczący" id="Ćwiczący" disabled>
+                <option value="1" selected>Jan Kowalski</option>
+                
+            </select>
+            <span id="errorĆwiczący" class="error-text"></span>
+            
+            
+
+            <label for="Trening">Trening: <span class="symbol-required">*</span></label>
+            <select name="Trening" id="Trening" disabled>
+                <option value="1" selected>Siłownia</option>
+                <option value="2">Sauna</option>
+                
+            </select>
+            <span id="errorTrening" class="error-text"></span>
+            
+            
+
+            <label for="Cena">Cena: <span class="symbol-required">*</span></label>
+            <input type="number" name="Cena" id="Cena" value="120" disabled>
+            <span id="errorCena" class="error-text"></span>
+            
+
+            <label for="Data">Data Wejścia: <span class="symbol-required">*</span></label>
+            <input type="date" name="Data" id="Data" value="2022-04-10" disabled>
+            <span id="errorData" class="error-text"></span>
+            
+            
+            <div>
+                <a href="form-edit.html" class="szczeg-button-edit">Edytuj</a>
+            </div>
+        </form>
+        <h2>Szczegóły Ćwczącego</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Wiek</th>
+                    <th>Pesel</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>16</td>
+                    <td>16485548</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+        <h2>Szczegóły Treningu</h2>
+        <table class="table-list">
+            <thead>
+                <tr>
+                    <th>Opis</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Trening siłowy złożony z ponad 50 stanowisk do treningu</td>
+                </tr>
+            </tbody>
+        </table>
+        <p><a href="list.html" class="button-back">Powrót</a></p>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>

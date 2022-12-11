@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../Cwiczacy/list.html">Ćwiczący</a></li>
+            <li><a href="list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Edycja Wejścia</h2>
+        <form class="form">
+            <label for="Ćwiczący">Ćwiczący: <span class="symbol-required">*</span></label>
+            <select name="Ćwiczący" id="Ćwiczący" required>
+                <option value="1" selected>Jan Kowalski</option>
+                
+            </select>
+            <span id="errorFirstName" class="error-text"></span>
+            
+            
+
+            <label for="firstName">Trening: <span class="symbol-required">*</span></label>
+            <select name="Trening" id="Trening" required>
+                <option value="1" selected>Siłownia</option>
+                <option value="2">Sauna</option>
+                
+            </select>
+            <span id="errorFirstName" class="error-text"></span>
+            
+            
+
+            <label for="Cena">Cena: <span class="symbol-required">*</span></label>
+            <input type="number" name="Cena" id="Cena" value="120" required>
+            <span id="errorCena" class="error-text"></span>
+            
+
+            <label for="Data">Data Wejścia: <span class="symbol-required">*</span></label>
+            <input type="date" name="Data" id="Data" value="2022-04-10" required>
+            <span id="errorFirstName" class="error-text"></span>
+        
+            <div>
+                <p id="errorsSummary"></p>
+                <input type="submit" class="button-add" value="Akceptuj"/>
+                <a href="list.html" class="list-actions-button-edit">Wyjdź</a>
+            </div>
+            
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>

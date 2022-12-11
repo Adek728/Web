@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang ="pl-PL">
+<head>
+    <link rel="stylesheet" href="css/style.css" />
+    <meta charset="UTF-8">
+    <title>TurboFit</title>
+
+    <link rel="stylesheet" href="../../css/style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+
+</head>
+<body>
+
+    <header>
+        <h1>TurboFit</h1>
+        <img src="../../images/muscular-bodybuilder-with-clock-pngrepo-com.png" alt="a">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../index.html">Strona główna</a></li>
+            <li><a href="../Cwiczacy/list.html">Ćwiczący</a></li>
+            <li><a href="list.html">Wejścia</a></li>
+            <li><a href="../Trening/list.html">Trening</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Nowe Wejście</h2>
+        <form class="form">
+            <label for="Ćwiczący">Ćwiczący: <span class="symbol-required">*</span></label>
+            <select name="Ćwiczący" id="Ćwiczący" class="error-input" required>
+                <option selected>-Wybór Ćwiczącego-</option>
+                <option value="1">Jan Kowalski</option>
+            </select>
+            <span id="errorFirstName" class="errors-text">Ćwczący Wymagany!</span>
+            
+            
+
+            <label for="firstName">Trening: <span class="symbol-required">*</span></label>
+            <select name="Trening" id="Trening" class="error-input" required>
+                <option selected>-Wybór Treningu-</option>
+                <option value="1">Siłownia</option>
+                <option value="2">Sauna</option>
+            </select>
+            <span id="errorFirstName" class="errors-text">Rodzaj Treningu Wymagany!</span>
+            
+            
+
+            <label for="Cena">Cena: <span class="symbol-required">*</span></label>
+            <input type="number" name="Cena" id="Cena" class="error-input" required>
+            <span id="errorCena" class="errors-text">Cena Wymagana!</span>
+            
+
+            <label for="Data">Data Wejścia: <span class="symbol-required">*</span></label>
+            <input type="date" name="Data" id="Data" class="error-input" required>
+            <span id="errorFirstName" class="errors-text">Data Wymagana!</span>
+            
+            <div class="form-buttons">
+                <p id="errorsSummary" class="errors-text">Błędny formularz</p>
+                <input type="submit" class="form-button-submit" value="Dodaj"/>
+                <a href="list.html" class="form-button-cancel">Anuluj</a>
+            </div>
+            
+
+
+        </form>
+    </main>
+
+    <footer>
+        <p>Adrian, Krzywnicki, s22887</p>
+    </footer>
+
+    
+
+
+    
+
+</body>
+</html>
